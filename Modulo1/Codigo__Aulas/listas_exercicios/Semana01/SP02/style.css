@@ -1,0 +1,18 @@
+.form-login{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: 300px;
+    border: solid black;
+    border-width: thin;
+}
+h2{
+    text-align: center;
+}
+
+input{
+    display: block;
+    text-align: center;
+    margin: 20px auto 10px auto;
+}

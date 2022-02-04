@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    margin: auto auto auto auto;
+
+}
+
+.quadradoMaior{
+    display: inline-flex;
+    border: solid thin;
+    margin: auto auto auto auto;
+    width: 400px;
+    height: 200px;
+
+}
+
+.quadradoMenor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin;
+    margin: auto auto auto auto;
+    font-size: xx-large;
+    width: 150px;
+    height: 180px;
+}
