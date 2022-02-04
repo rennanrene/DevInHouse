@@ -1,0 +1,17 @@
+#container{
+    /* display: flex; */
+    width: 50%;
+    height: 50%;
+    margin: auto auto auto auto;
+}
+
+button{
+    display: block;
+    margin: auto auto 10px auto;
+}
+
+img{
+    display: block;
+    margin: auto auto auto auto;
+}
+

@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.form-login{
+    display: block;
+    margin: auto auto auto auto;
+    height: fit-content;
+    width: 300px;
+    border: solid black;
+    border-width: thin;
+    vertical-align: middle;
+}
+
+.campos{
+    display: block;
+    text-align: center;
+    margin: 20px auto 10px auto;
+}

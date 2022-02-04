@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S03] - Ex 3 - Calculadora</title>
+</head>
+<body>
+    <div id="container">
+        <label id="calculadora">Calculadora</label>
+        <input id="valor" type="text" value=''>
+        <div id="botoes">
+            <button class="operacao" id="soma" type="submit" onclick="adiciona(this.value)" value='+'>+</button>
+            <button class="operacao" id="subtracao" type="submit" onclick="adiciona(this.value)" value='-'>-</button>
+            <button class="operacao" id="multiplicacao" type="submit" onclick="adiciona(this.value)" value='*'>*</button>
+            <button class="operacao" id="divisao" type="submit" onclick="adiciona(this.value)" value='/'>/</button>
+            <button class="solucao" type="submit" onclick="resultado()">=</button>
+        </div>
+    </div>
+    <script>
+        var expressao;
+        function adiciona(operador){
+            expressao = document.getElementById("valor").value;
+            expressao = expressao + operador;
+            console.log(expressao);
+            var textoAtual = document.getElementById("valor");
+            textoAtual.value = expressao;
+        }
+        function resultado(){
+            expressao = document.getElementById("valor").value;
+            resultadoExp = eval(expressao);
+            var textoAtual = document.getElementById("valor");
+            textoAtual.value = resultadoExp;
+        }
+    </script>
+</body>
+</html>

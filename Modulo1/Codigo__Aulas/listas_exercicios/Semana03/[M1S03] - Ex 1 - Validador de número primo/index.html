@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S03] - Ex 1 - Validador de número primo</title>
+    <style>
+        body{
+            height: 1vh;
+        }
+        #container{
+            display: block;
+            width: 25%;
+            height: 50%;
+            margin: 25% auto auto auto;
+        }
+        label, h3{
+            display: block;
+            margin: auto auto 20px auto;
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: auto auto 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <label>Digite um numero: </label>
+        <input type="number" id="numero">
+        <button type="submit" onclick="ehPrimo()">Enviar</button>
+    </div>
+    <script>
+        function ehPrimo(){
+            var resultado = document.getElementById("resposta");
+            if (resultado){
+                resultado.remove();
+            }
+
+            var n = document.getElementById("numero").value;
+            var quant = 0;
+            var numeros = [];
+            for (var i= 1; i <= n; i++){
+                console.log(i);
+                if (n%i == 0){
+                    quant++;
+                    numeros.push(i);
+                    console.log(quant);
+                }
+            }
+
+            if (quant == 2 || n == 1){
+                var resultado = document.createElement("h3");
+                resultado.setAttribute("id","resposta");
+                document.getElementById("container").appendChild(resultado);
+                resultado.innerHTML = "O numero "+n+" é primo!"
+            }
+            else{
+                var resultado = document.createElement("h3");
+                document.getElementById("container").appendChild(resultado);
+                resultado.innerHTML = "O numero "+n+" nao é primo pois é divisivel por "+numeros;
+            }
+        }
+    </script>
+</body>
+</html>

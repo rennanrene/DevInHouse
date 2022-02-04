@@ -1,0 +1,16 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto auto auto auto;
+}
+
+button{
+    width: 300px;
+    margin: 10px auto auto auto;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
